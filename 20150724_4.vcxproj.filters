@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="2DGameFrameWork">
+      <UniqueIdentifier>{001825c5-e4a4-446b-8aad-0ec499e80d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFrameWork\Manager">
+      <UniqueIdentifier>{8ef75d15-42ac-4dd8-8f7d-c386ebd85259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFrameWork\UTIL">
+      <UniqueIdentifier>{e57cc2f5-af88-4415-a7b7-6ee42e3ddebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DGameFrameWork\txtData">
+      <UniqueIdentifier>{92cb3137-b447-4ceb-9871-4c728eb9b61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame">
+      <UniqueIdentifier>{74b74ed0-9bff-4a8a-b2b7-23a79076f888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="mainGame\gameScene">
+      <UniqueIdentifier>{b28161e6-e5f2-40d5-87cb-cee1a72e10e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\gameScene\map">
+      <UniqueIdentifier>{a3c886b7-16a4-4c28-b0a0-805443d46f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\gameScene\map\player">
+      <UniqueIdentifier>{b344fb45-df93-478f-b0b9-2e3865d9a373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\gameScene\map\enemy">
+      <UniqueIdentifier>{9e0c53c8-3429-4a9d-87b9-436e31c630a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainGame\gameScene\map\tile">
+      <UniqueIdentifier>{d68e32c3-cedf-48e1-a694-f4ef18a92af7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="commonMacroFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="singletonBase.h">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gameNode.h">
+      <Filter>2DGameFrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="mainGame.h">
+      <Filter>mainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="keyManager.h">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="randomFunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>2DGameFrameWork\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="txtData.h">
+      <Filter>2DGameFrameWork\txtData</Filter>
+    </ClInclude>
+    <ClInclude Include="soundManager.h">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="d2dManager.h">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gameScene.h">
+      <Filter>mainGame\gameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>mainGame\gameScene\map\player</Filter>
+    </ClInclude>
+    <ClInclude Include="gameMap.h">
+      <Filter>mainGame\gameScene\map</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>mainGame\gameScene\map\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="tiles.h">
+      <Filter>mainGame\gameScene\map\tile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameNode.cpp">
+      <Filter>2DGameFrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="keyManager.cpp">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>2DGameFrameWork\UTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="txtData.cpp">
+      <Filter>2DGameFrameWork\txtData</Filter>
+    </ClCompile>
+    <ClCompile Include="soundManager.cpp">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="mainGame.cpp">
+      <Filter>mainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="winMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="d2dManager.cpp">
+      <Filter>2DGameFrameWork\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="gameScene.cpp">
+      <Filter>mainGame\gameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>mainGame\gameScene\map\player</Filter>
+    </ClCompile>
+    <ClCompile Include="gameMap.cpp">
+      <Filter>mainGame\gameScene\map</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>mainGame\gameScene\map\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="tiles.cpp">
+      <Filter>mainGame\gameScene\map\tile</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
