@@ -11,7 +11,6 @@ gameNode::~gameNode()
 {
 }
 
-//초기화 해주는 함수
 HRESULT gameNode::init(void)
 {
 	_hdc = GetDC(_hWnd);
@@ -39,10 +38,8 @@ HRESULT gameNode::init(bool managerInit)
 	return S_OK;
 }
 
-//메모리 해제 해주는 함수
 void gameNode::release(void)
 {
-
 	if (_managerInit)
 	{
 		KillTimer(_hWnd, 1);
@@ -57,25 +54,9 @@ void gameNode::release(void)
 	
 }
 
-//연산 담당 함수
-void gameNode::update(float timeDelta)
-{
-
-}
-
-
-//그려주는 함수
-void gameNode::render(void)
-{
-
-}
-
-
 LRESULT gameNode::MainProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
 	PAINTSTRUCT ps;
-	//HDC hdc;
-
 
 	switch (iMessage)
 	{

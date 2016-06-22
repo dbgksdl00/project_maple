@@ -1,5 +1,7 @@
 #pragma once
 
+class player;
+
 enum tagNorTileState : char
 {
 	NTST_NULL,
@@ -43,6 +45,8 @@ class tiles
 {
 private:
 	vector<tagTilesStruct> _tile;
+	player* _player;
+
 public:
 	HRESULT init();
 	void release();
@@ -50,6 +54,9 @@ public:
 	void render(int arrNum);
 
 	int getTileSize(){ return _tile.size(); }
+	tagTilesStruct getTiles(int arrNum){ return _tile[arrNum]; }
+
+	void setPlayerLink(player* player){ _player = player; }
 
 	tiles();
 	~tiles();

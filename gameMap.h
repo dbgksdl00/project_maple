@@ -11,6 +11,7 @@ private:
 	tiles* _tiles;
 public:
 	HRESULT init();
+
 	void release();
 	void update(float timeDelta);
 	void render();

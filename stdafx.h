@@ -12,6 +12,7 @@
 #ifdef _DEBUG
 #pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
 #endif
+
 // C 런타임 헤더 파일입니다.
 #include <stdlib.h>
 #include <iostream>
@@ -20,6 +21,7 @@
 
 using namespace std;
 
+#include "utils.h"
 #include "commonMacroFunction.h"
 #include "randomFunction.h"
 #include "keyManager.h"
@@ -27,7 +29,6 @@ using namespace std;
 #include "soundManager.h"
 #include "d2dManager.h"
 #include "txtData.h"
-#include "utils.h"
 
 using namespace frameWork;
 //========================================
@@ -58,6 +59,7 @@ using namespace frameWork;
 #define SAFE_DELETE(p)			{if(p) { delete(p); (p) = NULL;}}
 #define SAFE_DELETE_ARRAY(p)		{if(p) { delete[](p); (p) = NULL;}}
 #define SAFE_RELEASE(p)			{if(p) {(p)->Release(); (p) = NULL;}}
+
 inline void CharToWChar(const char* pstrSrc, wchar_t pwstrDest[])
 {
 	int nLen = (int)strlen(pstrSrc) + 1;

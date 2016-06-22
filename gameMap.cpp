@@ -16,6 +16,9 @@ HRESULT gameMap::init()
 	_enemy = new enemy;
 	_tiles = new tiles;
 
+	_player->setTileLink(_tiles);
+	_tiles->setPlayerLink(_player);
+
 	_player->init();
 	_enemy->init();
 	_tiles->init();

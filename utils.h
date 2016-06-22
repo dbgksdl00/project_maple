@@ -16,7 +16,15 @@
 
 #define FLOAT_EPSILON 0.001f //실수의 가장 작은 단위를 말하는 그리스 어
 
-namespace frameWork //<--요건 원하는대로
+template <typename T>
+class CPOINT//이걸로 바꾸는건 나중에 하자
+{
+public:
+	T x;
+	T y;
+};
+
+namespace frameWork
 {
 	//거리 가져오는 함수
 	float getDistance(float startX, float startY, float endX, float endY);

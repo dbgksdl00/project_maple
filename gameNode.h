@@ -1,6 +1,5 @@
 #pragma once
 
-
 class gameNode
 {
 private:
@@ -11,9 +10,10 @@ public:
 			
 	virtual HRESULT init(void);
 	virtual HRESULT init(bool managerInit);
+
 	virtual void release(void);
-	virtual void update(float timeDelta);
-	virtual void render(void);
+	virtual void update(float timeDelta) {}
+	virtual void render(void) {}
 
 	HDC getHDC() { return _hdc; }
 

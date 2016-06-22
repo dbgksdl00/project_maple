@@ -147,4 +147,8 @@
       <Filter>mainGame\gameScene\map\tile</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="생각저장.txt" />
+  </ItemGroup>
 </Project>

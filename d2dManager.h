@@ -26,8 +26,6 @@ class d2dManager : public singletonBase<d2dManager>
 public:
 	typedef map<string, imageInfo> mapD2ImageList;
 	typedef map<string, imageInfo>::iterator mapD2ImageIter;
-	//typedef map<char*, ID2D1Bitmap*> mapD2ImageList;			//이미지 리스트 맵
-	//typedef map<char*, ID2D1Bitmap*>::iterator mapD2ImageIter;	//이미지 리스트 이터레이터
 
 private:
 	mapD2ImageList _mImageList;	//맵으로 구현된 이미지 리스트
@@ -47,7 +45,7 @@ public:
 	void end();
 
 	//이미지 추가
-	imageInfo addImage(string strKey, LPCWSTR fileName, int x = 0, int y = 0);
+	imageInfo addImage(string strKey, LPCWSTR fileName, int x = 0, int y = 0);//일단 오프셋 개념은 냄겨두장 ㅇ3ㅇ
 
 
 	////이미지 찾는 함수

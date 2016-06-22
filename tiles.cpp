@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "tiles.h"
+#include "player.h"
 
 tiles::tiles()
 {
@@ -64,22 +65,7 @@ void tiles::release()
 
 void tiles::update(float timeDelta)
 {
-	if (KEYMANAGER->isStayKeyDown(VK_LEFT))
-	{
-		_tile[0].x -= 300 * timeDelta;
-	}
-	if (KEYMANAGER->isStayKeyDown(VK_RIGHT))
-	{
-		_tile[0].x += 300 * timeDelta;
-	}
-	if (KEYMANAGER->isStayKeyDown(VK_UP))
-	{
-		_tile[0].y -= 300 * timeDelta;
-	}
-	if (KEYMANAGER->isStayKeyDown(VK_DOWN))
-	{
-		_tile[0].y += 300 * timeDelta;
-	}
+
 }
 
 void tiles::render(int arrNum)

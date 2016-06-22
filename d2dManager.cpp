@@ -35,12 +35,9 @@ void d2dManager::end()
 }
 
 //이미지
-
 imageInfo d2dManager::addImage(string strKey, LPCWSTR fileName, int x, int y)
 {
 	imageInfo temp = findImage(strKey);
-	//동일한 이미지 있는지 찾는다
-	//ID2D1Bitmap* img = findImage(strKey);
 
 	//키값과 같은 이미지가 있다면 추가하지 않고 그 이미지를 리턴
 	if (temp.image) return temp;

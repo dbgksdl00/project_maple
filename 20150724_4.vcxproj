@@ -114,6 +114,10 @@
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="winMain.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="생각저장.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
